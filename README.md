@@ -7,4 +7,4 @@ We have a continuous deployment system, which is used for testing all system com
 2. Install [Heutagogy Google Chrome Extension](https://chrome.google.com/webstore/detail/heutagogy/dcjclncadeblkbflledfnlldlidmjnhj).
    The extension allows saving links to web pages and marking them as read.
 
-3. Use [the Heutagogy frontend](https://heutagogy-frontend.herokuapp.com) to check your saved pages.
+3. Use [the Heutagogy frontend](https://app.heutagogy.io/) to check your saved pages.
