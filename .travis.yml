@@ -1,10 +1,7 @@
 language: ruby
 sudo: false
-install:
-- gem install html-proofer
 script:
 - bundle exec jekyll build
-- bundle exec htmlproofer ./_site --disable-external
 deploy:
   provider: s3
   access_key_id: AKIAJAHIBBCG3WPNNDTA
