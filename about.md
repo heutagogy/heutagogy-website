@@ -3,13 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
+Heutagogy is a [completely open source](https://github.com/heutagogy) personal assistant for lifelong learning.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+The first release [is out](/2017/03/22/heutagogy-0.1.html)!
