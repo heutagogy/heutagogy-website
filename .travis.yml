@@ -5,6 +5,7 @@ sudo: false
 script:
 - bundle exec jekyll build
 deploy:
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAJAHIBBCG3WPNNDTA
   secret_access_key:
