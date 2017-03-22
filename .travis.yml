@@ -1,0 +1,18 @@
+language: ruby
+sudo: false
+install:
+- gem install html-proofer
+script:
+- bundle exec jekyll build
+- bundle exec htmlproofer ./_site --disable-external
+deploy:
+  provider: s3
+  access_key_id: AKIAJAHIBBCG3WPNNDTA
+  secret_access_key:
+    secure: RhwSpIX4/1SN2jyZ/wuC+1q4LZG+iW3CxJBGZ5EihniQy2J0j9eb/JQjpRNlznLM0h6l+RFmJ9WA304gAK3HGw6+/KFIWBg3UvugJedpe83inHalg2gTcFp+KrTyCmKltdk2SwPFynPrm7X5iP44YXzXW8RN6Cm2MUKU2PQQNsFjMHk2Eoc6Ue0kWihXa0Feo2/TyBXD09RoV/mjqLXuDpZvpec7r5DFiAopHkllyAK2DAKnBF0Pq+cgCB+BEQ5HqBfL6BjBqZ8ihpzfcoUPCqj7E8oi3N3kJSi8GzCTQId9I715bcmIj02s0vMJ5ArJCZKeG2WNwmrjGrhrXkcOW8pcmvencWbaaL5Rop2VrY/+PY8IJ38z/XnxxwpDpUxE1oKd7JkdjegouY8MSNyqw0o0O80AYPpYCg6l7Zv3iltFwPOSX1ZeH8hW3sZl+V9AcBC9Gm3HoAtGG7WEGc6/DtBCgStRYWBq13hspvTJy5vK7dPljo5S1J3hkoqSf9FN6W4oCcaYsXpkCku9BVZs47St+XRQ3kanb7MPeScm6kw0CEKH6/jwOO3sTbZ9SLa7xw6OXrdoDAkXkG0JD2JHAGgxyALD2jvyXyUcmiQ+AOBta0DM+vOBjmpCrSmq4DIj1Jzed7dm0RSk5SPOyHjcUgqnqALI7H3RmJTVEFXXeo4=
+  bucket: heutagogy.io
+  local-dir: _site
+  acl: 'public_read'
+  on:
+    repo: heutagogy/heutagogy-website
+    branch: master
