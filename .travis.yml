@@ -3,7 +3,7 @@ rvm:
 - 2.3.3
 sudo: false
 script:
-- bundle exec jekyll build
+- JEKYLL_ENV=production bundle exec jekyll build
 deploy:
   skip_cleanup: true
   provider: s3

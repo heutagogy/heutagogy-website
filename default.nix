@@ -4,7 +4,7 @@ with pkgs;
 let
   ruby-deps = bundlerEnv {
     name = "heutagogy-website-ruby-deps";
-  
+
     # The only file that should be edited by hand is ./Gemfile.
     # To get a Gemfile.lock, run nix-shell -p bundler --run 'bundler lock'
     # To get a gemset.nix, run nix-shell -p bundix --run 'bundix'
