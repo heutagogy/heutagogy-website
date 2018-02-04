@@ -22,6 +22,8 @@ url: "https://heutagogy.io" # the base hostname & protocol for your site, e.g. h
 twitter_username: heutagogy_io
 github_username: heutagogy
 
+google_analytics: UA-113543309-1
+
 # Build settings
 markdown: kramdown
 theme: minima
